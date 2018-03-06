@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context="com.ldp.administrator.novelreader.ReaderPageActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:id="@+id/ReaderPageTextView"
+        android:text="正在转码"
+  android:textSize="25sp"
+        android:background="@drawable/paper_white_yellow"
+        />
+
+<LinearLayout
+    android:id="@+id/FolderANDSettings"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/folder_and_settings"
+    android:visibility="gone">
+<Button
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/FolderButtonPopup"
+    android:background="@drawable/popup_folder"
+    />
+
+    </LinearLayout>
+<ListView
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:text="正在生成目录"
+    android:id="@+id/FoderListView"
+    android:background="@drawable/forder_listview_back"
+    ></ListView>
+</RelativeLayout>

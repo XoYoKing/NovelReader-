@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:id="@+id/ItemNovelCover"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/ItemNovelName"
+        android:text="书名"
+        android:layout_toRightOf="@id/ItemNovelCover"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/ItemNovelName"
+        android:id="@+id/ItemNovelAuthor"
+        android:text="作者"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/ItemRecentUpdate"
+        android:layout_below="@id/ItemNovelAuthor"
+        android:layout_toRightOf="@id/ItemNovelName"
+        android:text="最近更新"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/ItemRecentUpdateTime"
+        android:layout_below="@id/ItemNovelName"
+        android:layout_toRightOf="@id/ItemNovelCover"
+        android:text="更新时间"
+        />
+
+
+
+</RelativeLayout>
